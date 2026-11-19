@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13.5px;
+            color: #222222;
+            line-height: 1.45;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .titulo-indicador {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 22px;
+            margin-bottom: 6px;
+            color: #1a252f;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 650px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            page-break-inside: avoid;
+        }
+        th {
+            font-weight: bold;
+            text-align: right;
+            padding: 8px 12px;
+            border-bottom: 2px solid #bdc3c7;
+            white-space: nowrap;
+        }
+        th:first-child {
+            text-align: left;
+            width: 220px;
+        }
+        td {
+            padding: 8px 12px;
+            text-align: right;
+            border-bottom: 1px solid #ecf0f1;
+            white-space: nowrap;
+        }
+        td:first-child {
+            text-align: left;
+            font-weight: bold;
+        }
+        .container-grafico {
+            margin-top: 12px;
+            margin-bottom: 22px;
+            page-break-inside: avoid;
+        }
+        .container-grafico img {
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p>Bom dia, {{ gerente }}!</p>
+    
+    <p>O resultado de ontem (dia <strong>{{ data_ontem }}</strong>) da <strong>Loja {{ nome_loja }}</strong> foi:</p>
+    
+    <div class="titulo-indicador">Desempenho Diário</div>
+    {{ indicadores_dia }}
+    
+    <div class="titulo-indicador">Desempenho Acumulado Anual</div>
+    {{ indicadores_ano }}
+
+    <p>O gráfico abaixo exibe o acumulado de quantidades de produtos e faturamento da loja por mês:</p>
+
+    <div class="container-grafico">
+        <img src="cid:grafico_vendas" alt="Gráfico de Vendas Mensais">
+    </div>
+
+    <p>Segue em anexo a planilha com todos os dados da loja para mais detalhes.</p>
+    <p>Qualquer dúvida, estou à disposição.</p>
+    
+    <p>Atenciosamente, {{ nome_remetente }}.<br><strong>Controladoria de Vendas</strong></p>
+</body>
+</html>

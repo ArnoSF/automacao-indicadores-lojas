@@ -1,0 +1,37 @@
+# Ambiente Virtual do Python
+.venv/
+
+# Arquivos invisíveis do Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# IDEs, Editores e Notebooks
+.vscode/
+.ipynb_checkpoints/
+
+# Arquivos temporários do Excel
+~$*.xlsx
+~$*.xls
+
+# Caches automáticos do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dados processados
+data/processed/*
+!data/processed/.gitkeep
+
+# Logs do Sistema e Auditoria
+logs/*
+*.log
+*-log.txt
+!logs/.gitkeep
+
+# Resultados gerados pela execução, mas mantém a pasta no Git
+reports/*
+!reports/.gitkeep
+
+# Segurança e Credenciais
+.env

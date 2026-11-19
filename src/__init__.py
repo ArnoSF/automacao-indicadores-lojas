@@ -1,0 +1,1 @@
+"""Pacote de automação de indicadores de desempenho e relatórios gerenciais (OnePage)."""

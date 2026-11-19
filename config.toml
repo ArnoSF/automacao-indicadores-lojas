@@ -1,0 +1,23 @@
+# =========================================================================
+# ARQUIVO DE CONFIGURAÇÃO DO PROJETO
+# Define os parâmetros padrão da execução (podem ser sobrescritos via CLI).
+# =========================================================================
+
+[outputs]
+# Define se o acompanhamento passo a passo será exibido na tela durante a execução
+exibir_prints_acompanhamento = true
+
+# Define se as planilhas geradas na execução serão mantidas em disco após o envio dos e-mails
+manter_planilhas = true
+
+# Define se as imagens dos gráficos gerados serão exportadas
+exportar_graficos = true
+
+# Define se os PDFs de simulação de envio de e-mail serão gerados
+gerar_pdfs_email = true
+
+[caminhos]
+# Caminhos das pastas de saída (ignoradas no .gitignore)
+saida_planilhas = "data/processed/backup_vendas_lojas/"
+saida_pdfs = "reports/pdfs/"
+saida_graficos = "reports/graficos/"
